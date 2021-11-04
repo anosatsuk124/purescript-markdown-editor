@@ -6,9 +6,9 @@
   "scripts": {
     "postinstall": "npx spago install",
     "build": "npx spago bundle-app --to ./index.js",
-    "watch": "spago bundle-app --watch --to ./index.js",
+    "watch": "spago bundle-app --to ./index.js --watch",
     "start": "npx electron .",
-    "test": "npx spago bundle-app --to ./index.js && npx electron ."
+    "test": "npm run build && npx electron ."
   },
   "author": "Satsuki Akiba",
   "license": "GPLv3",

@@ -1,3 +1,5 @@
-exports.markdownIt = (md) => {
-  return window.MarkdownIt.markdownit(md);
+exports.markdownIt = (markdown) => {
+  const md = window.markdownit();
+  const result = md.render( markdown );
+  return result;
 }
