@@ -4,11 +4,11 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "postinstall": "npx spago install",
-    "build": "npx spago build",
+    "postinstall": "spago install",
+    "build": "spago build && webpack",
     "watch": "spago build --watch",
-    "start": "npx electron .",
-    "test": "npm run build && npx electron ."
+    "start": "electron .",
+    "test": "npm run build && electron ."
   },
   "author": "Satsuki Akiba",
   "license": "GPLv3",
