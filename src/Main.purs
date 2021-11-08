@@ -57,8 +57,8 @@ render state = do
                  HP.id "output", 
                  HC.style do 
                     CB.backgroundColor white
-               ] [],
-        HH.script [ HP.src "https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.js" ] []
+               ] []
+        --HH.script [ HP.src "https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.js" ] []
         ]
     where 
         white = C.rgb 123 111 124

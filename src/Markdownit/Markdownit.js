@@ -1,5 +1,6 @@
+const MarkdownIt = require('markdown-it');
+
 exports.markdownIt = (markdown) => {
-  const md = window.markdownit();
-  const result = md.render( markdown );
-  return result;
+  const md = new MarkdownIt();
+  return md.render( markdown );
 }
