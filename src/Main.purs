@@ -55,13 +55,14 @@ render state = do
         HH.p [] [ HH.text $ show state.html ],
         HH.div [ HP.ref state.output,
                  HP.id "output", 
+                 HP.class_ (H.ClassName "markdown-body"), 
                  HC.style do 
                     CB.backgroundColor white
                ] []
         --HH.script [ HP.src "https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.js" ] []
         ]
     where 
-        white = C.rgb 123 111 124
+        white = C.rgb 212 212 212
 
 handleAction :: forall output m. MonadAff m => Action -> H.HalogenM State Action () output m Unit
 handleAction = case _ of
