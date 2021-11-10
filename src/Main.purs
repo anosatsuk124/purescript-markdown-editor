@@ -41,8 +41,8 @@ component =
 
 initialState :: forall input. input -> State
 initialState _ = {
-  html: "<h1>hello</h1>",
-  textarea: "# hello",
+  html: "",
+  textarea: "",
   output: H.RefLabel "output"
   }
 
@@ -54,7 +54,7 @@ render state = do
         HH.p [] [ HH.text $ show state.textarea ],
         HH.p [] [ HH.text $ show state.html ],
         HH.div [ HP.ref state.output,
-                 HP.id "output", 
+                 --HP.id "output", 
                  HP.class_ (H.ClassName "markdown-body"), 
                  HC.style do 
                     CB.backgroundColor white
