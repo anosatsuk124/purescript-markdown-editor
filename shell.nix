@@ -12,5 +12,6 @@ pkgs.mkShell {
     easy-ps.purs-0_14_5
     easy-ps.spago
     pkgs.nodejs-16_x
+    easy-ps.purescript-language-server
   ];
 }
